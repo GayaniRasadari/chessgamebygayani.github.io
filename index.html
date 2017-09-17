@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome Pure Chess 2K17</title>
+        <link rel="stylesheet"type="text/css"href="css/ChessStyle.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <style>
+            h1{
+                text-align: center;
+                font-size: 50px;
+                color: #fddfdf;
+            }
+        </style>
+    </head>
+
+<body background="images/scn/1.jpg" class="Background">
+<h1>Chess Game</h1>
+<div class="row">
+    <div class="col-md-12 col-lg-12">
+        <div class="col-md-3">
+            <div class="row">
+                <div class="team-name">White Team</div>
+            </div>
+            <div class="row" style="position:absolute; float: left;width: 100px;height: 700px">
+                <div id="cr1" class="bts div-cross" style="float: left"></div>
+                <div id="cr2" class="bts div-cross" style="float: right"></div>
+                <div id="cr3" class="bts div-cross" style="float: left"></div>
+                <div id="cr4" class="bts div-cross" style="float: right"></div>
+                <div id="cr5" class="bts div-cross" style="float: left"></div>
+                <div id="cr6" class="bts div-cross" style="float: right"></div>
+                <div id="cr7" class="bts div-cross" style="float: left"></div>
+                <div id="cr8" class="bts div-cross" style="float: right"></div>
+            </div>
+            <div class="row" style="position: absolute; left: 150px;width: 100px;height: 700px">
+                <div id="cr9" class="bts div-cross" style="float: left"></div>
+                <div id="cr10" class="bts div-cross" style="float: right"></div>
+                <div id="cr11" class="bts div-cross" style="float: left"></div>
+                <div id="cr12" class="bts div-cross" style="float: right"></div>
+                <div id="cr13" class="bts div-cross" style="float: left"></div>
+                <div id="cr14" class="bts div-cross" style="float: right"></div>
+                <div id="cr15" class="bts div-cross" style="float: left"></div>
+                <div id="cr16" class="bts div-cross" style="float: right"></div>
+            </div>
+        </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="position: absolute; left: 300px">
+        <div id="board" class="row container-fluid main-border">
+            <div class="row">
+                <div id="a8" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes">
+                    <div id="b-l-r"><img src="images/Rook-black.ico" width="80px" height="80px" alt="chessman" class="Black-Piese"></div>
+                </div>
+                <div id="b8" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes">
+                    <div id="b-l-k"><img src="images/Knight-black.ico" width="80px" height="80px" alt="chessman" class="Black-Piese"></div>
+                </div>
+                <div id="c8" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes">
+                    <div id="b-l-b"><img src="images/Bishop-black.ico" width="80px" height="80px" alt="chessman" class="Black-Piese"></div>
+                </div>
+                <div id="d8" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes">
+                    <div id="b-a-q"><img src="images/Queen-black.ico" width="80px" height="80px" alt="chessman" class="Black-Piese"></div>
+                </div>
+                <div id="e8" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes">
+                    <div id="b-a-king"><img src="images/King-black.ico" width="80px" height="80px" alt="chessman" class="Black-Piese"></div>
+                </div>
+                <div id="f8" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes">
+                    <div id="b-r-b"><img src="images/Bishop-black.ico" width="80px" height="80px" alt="chessman" class="Black-Piese"></div>
+                </div>
+                <div id="g8" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes">
+                    <div id="b-r-k"><img src="images/Knight-black.ico" width="80px" height="80px" alt="chessman" class="Black-Piese"></div>
+                </div>
+                <div id="h8" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes">
+                    <div id="b-r-r"><img src="images/Rook-black.ico" width="80px" height="80px" alt="chessman" class="Black-Piese"></div>
+                </div>
+            </div>
+            <!--Line 2-->
+            <div class="row">
+                <div id="a7" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes">
+                    <div id="b-1-p"><img src="images/Pawn-black.ico" width="80px" height="80px" alt="chessman" class="Black-Pown-Piese"></div>
+                </div>
+                <div id="b7" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes">
+                    <div id="b-2-p"><img src="images/Pawn-black.ico" width="80px" height="80px" alt="chessman" class="Black-Pown-Piese"></div>
+                </div>
+                <div id="c7" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes">
+                    <div id="b-3-p"><img src="images/Pawn-black.ico" width="80px" height="80px" alt="chessman" class="Black-Pown-Piese"></div>
+                </div>
+                <div id="d7" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes">
+                    <div id="b-4-p"><img src="images/Pawn-black.ico" width="80px" height="80px" alt="chessman" class="Black-Pown-Piese"></div>
+                </div>
+                <div id="e7" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes">
+                    <div id="b-5-p"><img src="images/Pawn-black.ico" width="80px" height="80px" alt="chessman" class="Black-Pown-Piese"></div>
+                </div>
+                <div id="f7" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes">
+                    <div id="b-6-p"><img src="images/Pawn-black.ico" width="80px" height="80px" alt="chessman" class="Black-Pown-Piese"></div>
+                </div>
+                <div id="g7" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes">
+                    <div id="b-7-p"><img src="images/Pawn-black.ico" width="80px" height="80px" alt="chessman" class="Black-Pown-Piese"></div>
+                </div>
+                <div id="h7" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes">
+                    <div id="b-8-p"><img src="images/Pawn-black.ico" width="80px" height="80px" alt="chessman" class="Black-Pown-Piese"></div>
+                </div>
+            </div>
+            <!--Line 3-->
+            <div class="row">
+                <div id="a6" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes"></div>
+                <div id="b6" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes"></div>
+                <div id="c6" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes"></div>
+                <div id="d6" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes"></div>
+                <div id="e6" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes"></div>
+                <div id="f6" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes"></div>
+                <div id="g6" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes"></div>
+                <div id="h6" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes"></div>
+            </div>
+            <!--Line 4-->
+            <div class="row">
+                <div id="a5" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes"></div>
+                <div id="b5" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes"></div>
+                <div id="c5" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes"></div>
+                <div id="d5" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes"></div>
+                <div id="e5" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes"></div>
+                <div id="f5" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes"></div>
+                <div id="g5" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes"></div>
+                <div id="h5" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes"></div>
+            </div>
+            <!--Line 5-->
+            <div class="row">
+                <div id="a4" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes"></div>
+                <div id="b4" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes"></div>
+                <div id="c4" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes"></div>
+                <div id="d4" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes"></div>
+                <div id="e4" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes"></div>
+                <div id="f4" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes"></div>
+                <div id="g4" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes"></div>
+                <div id="h4" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes"></div>
+            </div>
+            <!--Line 6-->
+            <div class="row">
+                <div id="a3" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes"></div>
+                <div id="b3" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes"></div>
+                <div id="c3" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes"></div>
+                <div id="d3" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes"></div>
+                <div id="e3" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes"></div>
+                <div id="f3" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes"></div>
+                <div id="g3" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes"></div>
+                <div id="h3" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes"></div>
+            </div>
+            <!--Line 7-->
+            <div class="row">
+                <div id="a2" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes">
+                    <div id= "w-1-p"><img src="images/Pawn-white.ico" width="80px" height="80px" alt="chessman" class="White-Pown-Piese"></div>
+                </div>
+                <div id="b2" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes">
+                    <div id="w-2-p"><img src="images/Pawn-white.ico" width="80px" height="80px" alt="chessman" class="White-Pown-Piese"></div>
+                </div>
+                <div id="c2" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes">
+                    <div id="w-3-p"><img src="images/Pawn-white.ico" width="80px" height="80px" alt="chessman" class="White-Pown-Piese"></div>
+                </div>
+                <div id="d2" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes">
+                    <div id="w-4-p"><img src="images/Pawn-white.ico" width="80px" height="80px" alt="chessman" class="White-Pown-Piese"></div>
+                </div>
+                <div id="e2" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes">
+                    <div id="w-5-p"><img src="images/Pawn-white.ico" width="80px" height="80px" alt="chessman" class="White-Pown-Piese"></div>
+                </div>
+                <div id="f2" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes">
+                    <div id="w-6-p"><img src="images/Pawn-white.ico" width="80px" height="80px" alt="chessman" class="White-Pown-Piese"></div>
+                </div>
+                <div id="g2" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes">
+                    <div id="w-7-p"><img src="images/Pawn-white.ico" width="80px" height="80px" alt="chessman" class="White-Pown-Piese"></div>
+                </div>
+                <div id="h2" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes">
+                    <div id="w-8-p"><img src="images/Pawn-white.ico" width="80px" height="80px" alt="chessman" class="White-Pown-Piese"></div>
+                </div>
+            </div>
+            <!--Line 8-->
+            <div class="row">
+                <div id="a1" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes">
+                    <div id="w-l-r"><img src="images/Rook-white.ico" width="80px" height="80px" alt="chessman" class="White-Piese"></div>
+                </div>
+                <div id="b1" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes">
+                    <div id="w-l-k"><img src="images/Knight-white.ico" width="80px" height="80px" alt="chessman" class="White-Piese"></div>
+                </div>
+                <div id="c1" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes">
+                    <div id="w-l-b"><img src="images/Bishop-white.ico" width="80px" height="80px" alt="chessman" class="White-Piese"></div>
+                </div>
+                <div id="e1" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes">
+                    <div id="w-a-q"><img src="images/Queen-white.ico" width="80px" height="80px" alt="chessman" class="White-Piese"></div>
+                </div>
+                <div id="d1" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes">
+                    <div id="w-a-king"><img src="images/King-white.ico" width="80px" height="80px" alt="chessman" class="White-Piese"></div>
+                </div>
+                <div id="f1" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes">
+                    <div id="w-r-b"><img src="images/Bishop-white.ico" width="80px" height="80px" alt="chessman" class="White-Piese"></div>
+                </div>
+                <div id="g1" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 black-image div-sizes">
+                    <div id="w-r-k"><img src="images/Knight-white.ico" width="80px" height="80px" alt="chessman" class="White-Piese"></div>
+                </div>
+                <div id="h1" onclick="" class="col-md-1 col-lg-1 col-xs-1 col-sm-1 white-image div-sizes">
+                    <div id="w-r-r"><img src="images/Rook-white.ico" width="80px" height="80px" alt="chessman" class="White-Piese"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3" style="position: absolute; ;right: 0px">
+        <div class="row">
+            <div class="team-name">Black Team</div>
+        </div>
+        <div class="row" style="position:absolute; float: left;width: 100px;height: 700px">
+            <div id="cr17" class="wts div-cross" style="float: left"></div>
+            <div id="cr18" class="wts div-cross" style="float: right"></div>
+            <div id="cr19" class="wts div-cross" style="float: left"></div>
+            <div id="cr20" class="wts div-cross" style="float: right"></div>
+            <div id="cr21" class="wts div-cross" style="float: left"></div>
+            <div id="cr22" class="wts div-cross" style="float: right"></div>
+            <div id="cr23" class="wts div-cross" style="float: left"></div>
+            <div id="cr24" class="wts div-cross" style="float: right"></div>
+        </div>
+        <div class="row" style="position: absolute; left: 150px;width: 100px;height: 700px">
+            <div id="cr25" class="wts div-cross" style="float: left"></div>
+            <div id="cr26" class="wts div-cross" style="float: right"></div>
+            <div id="cr27" class="wts div-cross" style="float: left"></div>
+            <div id="cr28" class="wts div-cross" style="float: right"></div>
+            <div id="cr29" class="wts div-cross" style="float: left"></div>
+            <div id="cr30" class="wts div-cross" style="float: right"></div>
+            <div id="cr31" class="wts div-cross" style="float: left"></div>
+            <div id="cr32" class="wts div-cross" style="float: right"></div>
+        </div>
+      </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/ChessJS.js"></script>
+</body>
+</html>
+
+
